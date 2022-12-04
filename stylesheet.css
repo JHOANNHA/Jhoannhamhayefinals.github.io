@@ -1,0 +1,75 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+ }
+
+body{
+  font-family: 'Montserrat';
+  z-index: -1;
+ }
+
+nav{
+   background:rgba(216, 128, 125, 0.75);
+   height: 90px;
+   width: 100%;
+}
+
+
+
+nav ul{
+   float: right;
+   margin-right: 15px;
+   
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 5px;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+
+a.active,a:hover{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: rgba(190, 81, 78, 0.74);
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}  
+  
+
+section{
+    background: linear-gradient(rgba(216, 128, 125, 0.75),rgba(0,0,0,0.75)),url(images/bghome.gif); 
+    background-size: cover;
+    height: calc(100vh - 80px);
+    
+}
+
+
+
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+ }
+ .content h1{
+  font-size: 50px;
+  margin-top: 80px;
+ }

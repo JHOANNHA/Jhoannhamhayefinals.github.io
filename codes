@@ -1,0 +1,63 @@
+ <div style="display:inline-block;vertical-align:top;" class="container" style="margin: 30px;">
+    <img src="images/tan.jpg" style="width:100%"/>
+  </div>
+  <div style="display:inline-block;">
+    <p style="text-align: center; padding-left: 30px;">Hi! I am Jhoannha Mhaye Tan, I am born on 27th day of December 2002 on the province of Rizal. 
+      <br>I am the oldest among our five siblings, 
+      <br>I am a second year college student taking Bachelor of Science Major in Information Technology at ICCT Colleges Foundation Inc. </p>
+    <p style="text-align: center; padding-left: 60px;"> </p>
+  </div>
+
+  
+.checkbtn{
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 2000px){
+    nav ul li a{
+     font-size: 14px;
+    }
+
+@media (max-width: 1000px){
+  .checkbtn{
+    display: block;
+   }
+   ul{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background:rgba(216, 128, 125, 0.75);
+     top: 80px;
+     left: -100%;
+     text-align: center;
+     transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+
+    a:hover,a.active{
+      background: none;
+      color: rgba(190, 81, 78, 0.74);
+      } 
+    #check:checked ~ ul{
+       left: 0;
+    }
+}
+
+
